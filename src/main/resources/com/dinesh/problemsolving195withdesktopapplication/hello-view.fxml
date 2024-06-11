@@ -1,10 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-
+<?import javafx.scene.shape.*?>
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1024.0" styleClass="parent" stylesheets="@HelloViewStyle.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
    <left>
-      <AnchorPane prefHeight="200.0" prefWidth="35.0" styleClass="sideBar" stylesheets="@HelloViewStyle.css" BorderPane.alignment="CENTER" />
+      <AnchorPane prefHeight="200.0" prefWidth="35.0" styleClass="sideBar" stylesheets="@HelloViewStyle.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="2.0" layoutY="214.0">
+               <children>
+                  <Label text="home">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin></Label>
+                  <Label layoutX="10.0" layoutY="10.0" text="menu">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin></Label>
+                  <Label layoutX="10.0" layoutY="10.0" text="gallery">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin></Label>
+                  <Label layoutX="10.0" layoutY="10.0" text="settings">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Separator minHeight="-Infinity" minWidth="-Infinity" prefWidth="5.0">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Separator>
+                  <Label layoutX="10.0" layoutY="10.0" text="add">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Label layoutX="15.0" layoutY="14.0" text="Label" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+            <Circle fill="WHITE" layoutX="25.0" layoutY="571.0" radius="15.0" stroke="#b3bbc3" strokeType="INSIDE" />
+         </children></AnchorPane>
    </left>
+   <center>
+      <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="41.0" layoutY="14.0" prefHeight="250.0" prefWidth="800.0" styleClass="pane" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label text="Label" />
+                     </children>
+                  </HBox>
+               </children></VBox>
+         </children>
+      </AnchorPane>
+   </center>
 </BorderPane>
